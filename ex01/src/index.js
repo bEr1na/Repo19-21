@@ -330,23 +330,27 @@ function funz(){
 
 
 
-function funbackSpace(){
+function backspace(){
     str = str.slice(0, -1);
     document.getElementById("textArea").value = str;
 }
 
-function funspace(){
+function space(){
     str += " ";
     document.getElementById("textArea").value = str;
 }
 
-function funcapsLock(){
+function caps_lock(){
     counter++;
     if(counter%2==1){
         on = true;
     } else{ on = false;}
 
 }
-function funok(){
+function enter(){
     window.alert(str);
+}
+function shift(){
+    str += "\n";
+    document.getElementById("textArea").value = str;
 }
