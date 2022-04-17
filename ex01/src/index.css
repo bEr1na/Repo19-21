@@ -1,0 +1,59 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.keyboard{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 80%;
+    height: 100px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(50px, auto);
+    
+}
+
+.keyboard_key{
+    max-height: 400px;
+    width: 20%%;
+    background: black;
+    color: aliceblue;
+    font-size: 20px;
+    border: 1px solid rgb(71, 70, 69);
+    padding: 0px;
+}
+.keyboard_key:active{
+    background: rgb(104, 102, 102);
+}
+textarea{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(to bottom right, #e2f4fa, #fff);
+    width: 70%;
+    height: 100px;
+    
+}
+h1{
+    text-align: center;
+}
+.back_space{
+    grid-column: 11/13;
+    grid-row: 1/3;
+}
+.caps_lock{
+    grid-column: 10/13;
+}
+
+.shift{
+    grid-column: 10/13;
+}
+.ok{
+    grid-column: 10/13;
+}
+.space{
+    grid-column: 1/10;
+}
